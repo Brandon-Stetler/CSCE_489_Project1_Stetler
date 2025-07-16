@@ -1,0 +1,1919 @@
+{
+  "requesterUsername": "RandMInstructor",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/173723328",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_e8e16c55-e4cb-492d-bd00-23b8993ac340",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 58
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 59
+            },
+            "text": "How do I view the assembly while dubugging this in VSCode?",
+            "kind": "text"
+          }
+        ],
+        "text": "How do I view the assembly while dubugging this in VSCode?"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "id": "vscode.implicit.selection",
+            "name": "file:shellfuncts.c",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "\\home\\osc\\CSCE489_Project1\\shellfuncts.c",
+                "_sep": 1,
+                "external": "vscode-remote://ssh-remote%2B192.168.56.108/home/osc/CSCE489_Project1/shellfuncts.c",
+                "path": "/home/osc/CSCE489_Project1/shellfuncts.c",
+                "scheme": "vscode-remote",
+                "authority": "ssh-remote+192.168.56.108"
+              },
+              "range": {
+                "startLineNumber": 23,
+                "startColumn": 11,
+                "endLineNumber": 23,
+                "endColumn": 14,
+                "selectionStartLineNumber": 23,
+                "selectionStartColumn": 14,
+                "positionLineNumber": 23,
+                "positionColumn": 11
+              }
+            },
+            "modelDescription": "User's active selection"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "To view assembly code while debugging in VS Code, you'll need to set up debugging for your C project and then use the disassembly view. Here's how to do it:\n\n## 1. First, let me check your current project setup ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/osc/CSCE489_Project1/",
+            "scheme": "vscode-remote",
+            "authority": "ssh-remote+192.168.56.108"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_readFile"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Reading [](file:///home/osc/CSCE489_Project1/Makefile)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/osc/CSCE489_Project1/Makefile": {
+                "$mid": 1,
+                "path": "/home/osc/CSCE489_Project1/Makefile",
+                "scheme": "vscode-remote",
+                "authority": "ssh-remote+192.168.56.108"
+              }
+            }
+          },
+          "pastTenseMessage": {
+            "value": "Read [](file:///home/osc/CSCE489_Project1/Makefile)",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/osc/CSCE489_Project1/Makefile": {
+                "$mid": 1,
+                "path": "/home/osc/CSCE489_Project1/Makefile",
+                "scheme": "vscode-remote",
+                "authority": "ssh-remote+192.168.56.108"
+              }
+            }
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "8f0ddd62-3a11-4d26-93cd-bb0e3d66b08a",
+          "toolId": "copilot_readFile"
+        },
+        {
+          "value": "Great! Your Makefile already has the correct flags for debugging (`-ggdb -O0`). Now let me check if you have a VS Code debug configuration: ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/osc/CSCE489_Project1/",
+            "scheme": "vscode-remote",
+            "authority": "ssh-remote+192.168.56.108"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_findFiles"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Searching for files matching `**/.vscode/launch.json`",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "pastTenseMessage": {
+            "value": "Searched for files matching `**/.vscode/launch.json`, 2 matches",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "resultDetails": [
+            {
+              "$mid": 1,
+              "external": "vscode-remote://ssh-remote%2B192.168.56.108/home/osc/CSCE489_Project1/.vscode/launch.json",
+              "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+              "scheme": "vscode-remote",
+              "authority": "ssh-remote+192.168.56.108"
+            },
+            {
+              "$mid": 1,
+              "external": "vscode-remote://ssh-remote%2B192.168.56.108/home/osc/CSCE489_Project1/.vscode/launch.json",
+              "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+              "scheme": "vscode-remote",
+              "authority": "ssh-remote+192.168.56.108"
+            }
+          ],
+          "toolCallId": "c39a6e07-3dd7-47ed-aca3-bf47ac8fc9b6",
+          "toolId": "copilot_findFiles"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Reading [](file:///home/osc/CSCE489_Project1/.vscode/launch.json#1-1), lines 1 to 50",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/osc/CSCE489_Project1/.vscode/launch.json#1-1": {
+                "$mid": 1,
+                "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                "scheme": "vscode-remote",
+                "authority": "ssh-remote+192.168.56.108",
+                "fragment": "1-1"
+              }
+            }
+          },
+          "pastTenseMessage": {
+            "value": "Read [](file:///home/osc/CSCE489_Project1/.vscode/launch.json#1-1), lines 1 to 50",
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/osc/CSCE489_Project1/.vscode/launch.json#1-1": {
+                "$mid": 1,
+                "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                "scheme": "vscode-remote",
+                "authority": "ssh-remote+192.168.56.108",
+                "fragment": "1-1"
+              }
+            }
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "aac28915-2c54-42a8-97f5-768590c8b78f",
+          "toolId": "copilot_readFile"
+        },
+        {
+          "value": "Perfect! You already have a debug configuration set up. Here's how to view assembly code while debugging:\n\n## Steps to View Assembly During Debugging:\n\n### 1. **Build your project with debug symbols**\nYour Makefile already has the correct flags (`-ggdb -O0`), so just build: ",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/osc/CSCE489_Project1/",
+            "scheme": "vscode-remote",
+            "authority": "ssh-remote+192.168.56.108"
+          }
+        },
+        {
+          "kind": "prepareToolInvocation",
+          "toolName": "copilot_runVsCodeTask"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "Running shell: build",
+            "isTrusted": true,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {}
+          },
+          "pastTenseMessage": {
+            "value": "Ran [shell: build](file:///home/osc/CSCE489_Project1/.vscode/tasks.json#4-19)",
+            "isTrusted": true,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "file:///home/osc/CSCE489_Project1/.vscode/tasks.json#4-19": {
+                "$mid": 1,
+                "path": "/home/osc/CSCE489_Project1/.vscode/tasks.json",
+                "scheme": "vscode-remote",
+                "authority": "ssh-remote+192.168.56.108",
+                "fragment": "4-19"
+              }
+            }
+          },
+          "isConfirmed": true,
+          "isComplete": true,
+          "toolCallId": "68560b15-6472-437f-89f9-26c57f013ae2",
+          "toolId": "copilot_runVsCodeTask"
+        },
+        {
+          "value": "### 2. **Start debugging**\n- Press `F5` or go to the Debug view (`Ctrl+Shift+D`) and click the play button\n- Choose either \"(gdb) Launch - No Args\" or \"(gdb) Launch - With Args\"\n\n### 3. **View Assembly Code**\nOnce you're in a debugging session, you have several options:\n\n#### **Option A: Disassembly View (Recommended)**\n1. While debugging (paused at a breakpoint), open the Command Palette (`Ctrl+Shift+P`)\n2. Type: `Debug: Open Disassembly View`\n3. This will open a dedicated disassembly panel showing the assembly code for the current location\n\n#### **Option B: Debug Console Commands**\n1. Open the Debug Console (`Ctrl+Shift+Y`)\n2. Use GDB commands directly:\n   ```\n   -exec disassemble\n   -exec disassemble main\n   -exec disassemble hello\n   ```\n\n#### **Option C: Mixed Source/Assembly View**\n1. Right-click in the editor while debugging\n2. Select \"Toggle Disassembly View\" or \"Show Disassembly\"\n\n### 4. **Useful GDB Commands in Debug Console**\n- `-exec disassemble` - shows assembly for current function\n- `-exec disassemble /m` - shows mixed source and assembly\n- `-exec info registers` - shows CPU register values\n- `-exec stepi` - step one assembly instruction\n- `-exec nexti` - step over one assembly instruction\n\n### 5. **Set Breakpoints**\n- Set breakpoints in your C code (",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/osc/CSCE489_Project1/",
+            "scheme": "vscode-remote",
+            "authority": "ssh-remote+192.168.56.108"
+          }
+        },
+        {
+          "kind": "inlineReference",
+          "inlineReference": {
+            "$mid": 1,
+            "external": "vscode-remote://ssh-remote%2B192.168.56.108/home/osc/CSCE489_Project1/shellfuncts.c",
+            "path": "/home/osc/CSCE489_Project1/shellfuncts.c",
+            "scheme": "vscode-remote",
+            "authority": "ssh-remote+192.168.56.108"
+          }
+        },
+        {
+          "value": " line 23 for example)\n- When execution pauses, you can examine the assembly\n\nYour debug configuration already includes `\"Set Disassembly Flavor to Intel\"`, so the assembly will be in Intel syntax (which is generally more readable than AT&T syntax).\n\nThe assembly view will show you exactly what machine code your C functions compile to, which is very useful for understanding performance, debugging optimization issues, or learning how C constructs map to assembly instructions.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/home/osc/CSCE489_Project1/",
+            "scheme": "vscode-remote",
+            "authority": "ssh-remote+192.168.56.108"
+          }
+        }
+      ],
+      "responseId": "response_1b67d529-ec3b-43aa-b566-c38c924f92eb",
+      "result": {
+        "timings": {
+          "firstProgress": 4319,
+          "totalElapsed": 36620
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"file:shellfuncts.c\">\nUser's active selection, this should be the main focus:\nExcerpt from shellfuncts.c, lines 23 to 23:\n```c\n(\"H\n```\n</attachment>\n<attachment filePath=\"/home/osc/CSCE489_Project1/shellfuncts.c\">\nUser's active file for additional context:\n```c\n/*************************************************************************************\n * shellfuncts.c - code definitions for your functions\n *\n *************************************************************************************/\n\n#include <stdio.h>\n#include \"shellfuncts.h\"\n\n/*************************************************************************************\n * hello - sends hello world to the user! I'm doing proper function commenting so future\n *         coders might not find my code as painful.\n *\n *\t\tParams:\tparam1 - I explain my parameters, like this is 1 for American, 2 for\n *                      Australian\n *\n *\t\tReturns: always returns 1, no matter what. Fairly useless.\n *\n *************************************************************************************/\n\nint hello(int param1) {\n\t// I'm commenting to explain that this checks param and changes the message\n\tif (param1 == 1)\n\t\tsend_msg(\"Hello world!\\n\");\n\telse\n\t\tsend_msg(\"G'day world!\\n\");\n\n\t// Return 1 because, why not.\n\treturn 1;\n}\n\n/*************************************************************************************\n * hello - sends hello world to the user! I'm doing proper function commenting so future\n *         coders might not find my code as painful.\n *\n *    Params:  param2 - not a very good parameter name - something better might be\n *                      say, msgstr or sendtext\n *\n *************************************************************************************/\n\nvoid send_msg(const char *param2) {\n\tprintf(\"%s\", param2);\n}\n```\n</attachment>\n\n</attachments>\n<context>\nThe current date is July 15, 2025.\nNo active tasks or terminals found.\n</context>\n<editorContext>\nThe user's current file is /home/osc/CSCE489_Project1/shellfuncts.c. The current selection is from line 23 to line 23.\n</editorContext>\n<repoContext>\nBelow is the information about the current repository. You can use this information when you need to calculate diffs or compare changes with the default branch.\nRepository name: CSCE489_Project1\nOwner: AFIT-ENG-Courses-Duncan\nCurrent branch: master\n\n</repoContext>\n<reminderInstructions>\nWhen using the insert_edit_into_file tool, avoid repeating existing code, instead use a line comment with \\`...existing code...\\` to represent regions of unchanged code.\nWhen using the replace_string_in_file tool, include 3-5 lines of unchanged code before and after the string you want to replace, to make it unambiguous which part of the file should be edited.\n\n</reminderInstructions>\n<userRequest>\nHow do I view the assembly while dubugging this in VSCode?\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Linux\nThe user's default shell is: \"bash\". When you generate terminal commands, please generate them correctly for this shell.\n</environment_info>\n<workspace_info>\nThe following tasks can be executed using the run_vs_code_task tool if they are not already running:\n<workspaceFolder path=\"/home/osc/CSCE489_Project1\">\n<task id=\"shell: build\">\n{\n\t\"label\": \"build\",\n\t\"type\": \"shell\",\n\t\"command\": \"make\",\n\t\"group\": {\n\t\t\"kind\": \"build\",\n\t\t\"isDefault\": true\n\t},\n\t\"detail\": \"Build the project using make\",\n\t\"options\": {\n\t\t\"cwd\": \"${workspaceFolder}\"\n\t}\n}\n</task>\n<task id=\"shell: clean\">\n{\n\t\"label\": \"clean\",\n\t\"type\": \"shell\",\n\t\"command\": \"make\",\n\t\"args\": [\n\t\t\"clean\"\n\t],\n\t\"group\": \"build\",\n\t\"detail\": \"Clean build artifacts\"\n}\n</task>\n<task id=\"shell: rebuild\">\n{\n\t\"label\": \"rebuild\",\n\t\"type\": \"shell\",\n\t\"command\": \"make\",\n\t\"args\": [\n\t\t\"clean\",\n\t\t\"&&\",\n\t\t\"make\"\n\t],\n\t\"group\": \"build\",\n\t\"detail\": \"Clean and rebuild the project\",\n\t\"dependsOrder\": \"sequence\",\n\t\"dependsOn\": [\n\t\t\"clean\"\n\t]\n}\n</task>\n\n</workspaceFolder>\nI am working in a workspace with the following folders:\n- /home/osc/CSCE489_Project1 \nI am working in a workspace that has the following structure:\n```\nMakefile\nmyshell\nmyshell.c\nmyshell.o\nREADME.md\nshellfuncts.c\nshellfuncts.h\nshellfuncts.o\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "toolCallRounds": [
+            {
+              "response": "To view assembly code while debugging in VS Code, you'll need to set up debugging for your C project and then use the disassembly view. Here's how to do it:\n\n## 1. First, let me check your current project setup ",
+              "toolCalls": [
+                {
+                  "name": "read_file",
+                  "arguments": "{\"filePath\": \"/home/osc/CSCE489_Project1/Makefile\", \"startLine\": 1, \"endLine\": 50}",
+                  "id": "toolu_vrtx_01WLTYbWMvNnyzom8NVnQgZm__vscode-1752583771676"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "9ad70ff6-f264-474e-8212-baca656c0cfe"
+            },
+            {
+              "response": "Great! Your Makefile already has the correct flags for debugging (`-ggdb -O0`). Now let me check if you have a VS Code debug configuration: ",
+              "toolCalls": [
+                {
+                  "name": "file_search",
+                  "arguments": "{\"query\": \".vscode/launch.json\"}",
+                  "id": "toolu_vrtx_01JWm5t8Q5RjrCA5CqrfGYWu__vscode-1752583771677"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "ffec58d6-d635-451c-8779-8eed0aca2686"
+            },
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "name": "read_file",
+                  "arguments": "{\"endLine\": 50, \"filePath\": \"/home/osc/CSCE489_Project1/.vscode/launch.json\", \"startLine\": 1}",
+                  "id": "toolu_vrtx_01JWRVeYeLBqg5nZA2YvfLuH__vscode-1752583771678"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "010a6c29-57d7-4740-bf21-8f3ae6c7662b"
+            },
+            {
+              "response": "Perfect! You already have a debug configuration set up. Here's how to view assembly code while debugging:\n\n## Steps to View Assembly During Debugging:\n\n### 1. **Build your project with debug symbols**\nYour Makefile already has the correct flags (`-ggdb -O0`), so just build: ",
+              "toolCalls": [
+                {
+                  "name": "run_vs_code_task",
+                  "arguments": "{\"id\": \"shell: build\", \"workspaceFolder\": \"/home/osc/CSCE489_Project1\"}",
+                  "id": "toolu_vrtx_01CFBuxXk1cZYu4zsghJ9kW1__vscode-1752583771679"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "ba565fde-c809-43a3-afae-4f65436d832b"
+            },
+            {
+              "response": "### 2. **Start debugging**\n- Press `F5` or go to the Debug view (`Ctrl+Shift+D`) and click the play button\n- Choose either \"(gdb) Launch - No Args\" or \"(gdb) Launch - With Args\"\n\n### 3. **View Assembly Code**\nOnce you're in a debugging session, you have several options:\n\n#### **Option A: Disassembly View (Recommended)**\n1. While debugging (paused at a breakpoint), open the Command Palette (`Ctrl+Shift+P`)\n2. Type: `Debug: Open Disassembly View`\n3. This will open a dedicated disassembly panel showing the assembly code for the current location\n\n#### **Option B: Debug Console Commands**\n1. Open the Debug Console (`Ctrl+Shift+Y`)\n2. Use GDB commands directly:\n   ```\n   -exec disassemble\n   -exec disassemble main\n   -exec disassemble hello\n   ```\n\n#### **Option C: Mixed Source/Assembly View**\n1. Right-click in the editor while debugging\n2. Select \"Toggle Disassembly View\" or \"Show Disassembly\"\n\n### 4. **Useful GDB Commands in Debug Console**\n- `-exec disassemble` - shows assembly for current function\n- `-exec disassemble /m` - shows mixed source and assembly\n- `-exec info registers` - shows CPU register values\n- `-exec stepi` - step one assembly instruction\n- `-exec nexti` - step over one assembly instruction\n\n### 5. **Set Breakpoints**\n- Set breakpoints in your C code (`shellfuncts.c` line 23 for example)\n- When execution pauses, you can examine the assembly\n\nYour debug configuration already includes `\"Set Disassembly Flavor to Intel\"`, so the assembly will be in Intel syntax (which is generally more readable than AT&T syntax).\n\nThe assembly view will show you exactly what machine code your C functions compile to, which is very useful for understanding performance, debugging optimization issues, or learning how C constructs map to assembly instructions.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "f8cfef17-d594-402b-a1ca-677d4cf1acab"
+            }
+          ],
+          "toolCallResults": {
+            "toolu_vrtx_01WLTYbWMvNnyzom8NVnQgZm__vscode-1752583771676": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "FY",
+                      "children": [
+                        {
+                          "type": 1,
+                          "ctor": 2,
+                          "ctorName": "We",
+                          "children": [
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 18,
+                                  "text": "```makefile\n",
+                                  "references": [
+                                    {
+                                      "anchor": {
+                                        "$mid": 1,
+                                        "path": "/home/osc/CSCE489_Project1/Makefile",
+                                        "scheme": "vscode-remote",
+                                        "authority": "ssh-remote+192.168.56.108"
+                                      },
+                                      "options": {
+                                        "isFromTool": true
+                                      }
+                                    }
+                                  ],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 18
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 17,
+                                  "text": "CC=gcc\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 17
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 16,
+                                  "text": "CFLAGS=-ggdb -Wall -Wextra -O0\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 16
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 15,
+                                  "text": "DEPS = shellfuncts.h\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 15
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 14,
+                                  "text": "OBJ = myshell.o shellfuncts.o \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 14
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 13,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 13
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 12,
+                                  "text": "%.o: %.c $(DEPS)\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 12
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 11,
+                                  "text": "\t$(CC) $(CFLAGS) -c -o $@ $<\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 11
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 10,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 10
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 9,
+                                  "text": "myshell: $(OBJ)\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 9
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 8,
+                                  "text": "\t$(CC) $(CFLAGS) -o $@ $^\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 8
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 7,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 7
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 6,
+                                  "text": ".PHONY: clean\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 6
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 5,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 5
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 4,
+                                  "text": "clean:\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 4
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 3,
+                                  "text": "\trm -f *.o *~ myshell \n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 3
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 2,
+                                  "text": "\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 2
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 18,
+                                  "text": "```",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 18
+                              },
+                              "references": []
+                            }
+                          ],
+                          "props": {},
+                          "references": []
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            },
+            "toolu_vrtx_01JWm5t8Q5RjrCA5CqrfGYWu__vscode-1752583771677": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "pY",
+                      "children": [
+                        {
+                          "type": 1,
+                          "ctor": 2,
+                          "ctorName": "Pee",
+                          "children": [
+                            {
+                              "type": 2,
+                              "priority": 20,
+                              "text": "2 total results",
+                              "references": [],
+                              "lineBreakBefore": true
+                            }
+                          ],
+                          "props": {
+                            "priority": 20
+                          },
+                          "references": []
+                        },
+                        {
+                          "type": 1,
+                          "ctor": 2,
+                          "ctorName": "Pee",
+                          "children": [
+                            {
+                              "type": 2,
+                              "priority": 10,
+                              "text": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                              "references": [
+                                {
+                                  "anchor": {
+                                    "$mid": 1,
+                                    "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                                    "scheme": "vscode-remote",
+                                    "authority": "ssh-remote+192.168.56.108"
+                                  },
+                                  "options": {
+                                    "isFromTool": true
+                                  }
+                                }
+                              ],
+                              "lineBreakBefore": true
+                            }
+                          ],
+                          "props": {
+                            "priority": 10
+                          },
+                          "references": []
+                        },
+                        {
+                          "type": 1,
+                          "ctor": 2,
+                          "ctorName": "Pee",
+                          "children": [
+                            {
+                              "type": 2,
+                              "priority": 10,
+                              "text": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                              "references": [
+                                {
+                                  "anchor": {
+                                    "$mid": 1,
+                                    "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                                    "scheme": "vscode-remote",
+                                    "authority": "ssh-remote+192.168.56.108"
+                                  },
+                                  "options": {
+                                    "isFromTool": true
+                                  }
+                                }
+                              ],
+                              "lineBreakBefore": true
+                            }
+                          ],
+                          "props": {
+                            "priority": 10
+                          },
+                          "references": []
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            },
+            "toolu_vrtx_01JWRVeYeLBqg5nZA2YvfLuH__vscode-1752583771678": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 22,
+                  "value": {
+                    "node": {
+                      "type": 1,
+                      "ctor": 2,
+                      "ctorName": "FY",
+                      "children": [
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "File: `",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "`. Lines ",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "1",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": " to ",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "50",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": " (",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "83",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": " lines total): ",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 2,
+                          "priority": 9007199254740991,
+                          "text": "\n",
+                          "lineBreakBefore": false
+                        },
+                        {
+                          "type": 1,
+                          "ctor": 2,
+                          "ctorName": "We",
+                          "children": [
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 52,
+                                  "text": "```jsonc\n",
+                                  "references": [
+                                    {
+                                      "anchor": {
+                                        "$mid": 1,
+                                        "path": "/home/osc/CSCE489_Project1/.vscode/launch.json",
+                                        "scheme": "vscode-remote",
+                                        "authority": "ssh-remote+192.168.56.108"
+                                      },
+                                      "options": {
+                                        "isFromTool": true
+                                      }
+                                    }
+                                  ],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 52
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 51,
+                                  "text": "{\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 51
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 50,
+                                  "text": "    // Use IntelliSense to learn about possible attributes.\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 50
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 49,
+                                  "text": "    // Hover to view descriptions of existing attributes.\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 49
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 48,
+                                  "text": "    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 48
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 47,
+                                  "text": "    \"version\": \"0.2.0\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 47
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 46,
+                                  "text": "    \"configurations\": [\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 46
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 45,
+                                  "text": "        {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 45
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 44,
+                                  "text": "            \"name\": \"(gdb) Launch - No Args\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 44
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 43,
+                                  "text": "            \"type\": \"cppdbg\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 43
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 42,
+                                  "text": "            \"request\": \"launch\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 42
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 41,
+                                  "text": "            \"program\": \"${workspaceFolder}/myshell\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 41
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 40,
+                                  "text": "            \"args\": [],\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 40
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 39,
+                                  "text": "            \"stopAtEntry\": false,\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 39
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 38,
+                                  "text": "            \"cwd\": \"${workspaceFolder}\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 38
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 37,
+                                  "text": "            \"environment\": [],\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 37
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 36,
+                                  "text": "            \"externalConsole\": false,\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 36
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 35,
+                                  "text": "            \"MIMode\": \"gdb\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 35
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 34,
+                                  "text": "            \"setupCommands\": [\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 34
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 33,
+                                  "text": "                {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 33
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 32,
+                                  "text": "                    \"description\": \"Enable pretty-printing for gdb\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 32
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 31,
+                                  "text": "                    \"text\": \"-enable-pretty-printing\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 31
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 30,
+                                  "text": "                    \"ignoreFailures\": true\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 30
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 29,
+                                  "text": "                },\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 29
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 28,
+                                  "text": "                {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 28
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 27,
+                                  "text": "                    \"description\": \"Set Disassembly Flavor to Intel\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 27
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 26,
+                                  "text": "                    \"text\": \"-gdb-set disassembly-flavor intel\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 26
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 25,
+                                  "text": "                    \"ignoreFailures\": true\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 25
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 24,
+                                  "text": "                }\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 24
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 23,
+                                  "text": "            ],\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 23
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 22,
+                                  "text": "            \"preLaunchTask\": \"build\"\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 22
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 21,
+                                  "text": "        },\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 21
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 20,
+                                  "text": "        {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 20
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 19,
+                                  "text": "            \"name\": \"(gdb) Launch - With Args\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 19
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 18,
+                                  "text": "            \"type\": \"cppdbg\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 18
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 17,
+                                  "text": "            \"request\": \"launch\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 17
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 16,
+                                  "text": "            \"program\": \"${workspaceFolder}/myshell\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 16
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 15,
+                                  "text": "            \"args\": [\"test\"],\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 15
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 14,
+                                  "text": "            \"stopAtEntry\": false,\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 14
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 13,
+                                  "text": "            \"cwd\": \"${workspaceFolder}\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 13
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 12,
+                                  "text": "            \"environment\": [],\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 12
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 11,
+                                  "text": "            \"externalConsole\": false,\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 11
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 10,
+                                  "text": "            \"MIMode\": \"gdb\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 10
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 9,
+                                  "text": "            \"setupCommands\": [\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 9
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 8,
+                                  "text": "                {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 8
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 7,
+                                  "text": "                    \"description\": \"Enable pretty-printing for gdb\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 7
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 6,
+                                  "text": "                    \"text\": \"-enable-pretty-printing\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 6
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 5,
+                                  "text": "                    \"ignoreFailures\": true\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 5
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 4,
+                                  "text": "                },\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 4
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 3,
+                                  "text": "                {\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 3
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 2,
+                                  "text": "                    \"description\": \"Set Disassembly Flavor to Intel\",\n",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 2
+                              },
+                              "references": []
+                            },
+                            {
+                              "type": 1,
+                              "ctor": 2,
+                              "ctorName": "Pee",
+                              "children": [
+                                {
+                                  "type": 2,
+                                  "priority": 52,
+                                  "text": "```",
+                                  "references": [],
+                                  "lineBreakBefore": true
+                                }
+                              ],
+                              "props": {
+                                "priority": 52
+                              },
+                              "references": []
+                            }
+                          ],
+                          "props": {},
+                          "references": []
+                        }
+                      ],
+                      "props": {},
+                      "references": []
+                    }
+                  }
+                }
+              ]
+            },
+            "toolu_vrtx_01CFBuxXk1cZYu4zsghJ9kW1__vscode-1752583771679": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "Task started and will continue to run in the background."
+                }
+              ]
+            }
+          },
+          "modelMessageId": "eb14d0d7-99cc-44bf-87cc-6cf3356b565b",
+          "responseId": "ed1b86ff-1eae-4dca-aa47-6ce46f7758e5",
+          "sessionId": "c51c7996-510d-49dc-ab70-1eb3f0bb66c8",
+          "agentId": "github.copilot.editsAgent"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "list"
+          }
+        ],
+        "disambiguation": []
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1752585585103,
+      "modelId": "github.copilot-chat/claude-sonnet-4"
+    }
+  ]
+}
