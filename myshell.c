@@ -1,6 +1,7 @@
 /*************************************************************************************
- * myshell - student code for Project 1 of CSCE 489 
- *
+ * myshell - Project 1 of CSCE 489 
+ * Author: Capt Brandon Stetler, AFIT Master's Student
+ * Due date: July 18, 2025
  *************************************************************************************/
 
 #include <stdio.h> // For input/output functions
@@ -23,7 +24,7 @@ int main(void){
 	while (1){
 		printf("shell> "); // Prompt for input
 		if (!fgets(line, MAX_LINE, stdin)) 
-			// If EOF is reached or an error occurs, break the loop
+			// Read in line, and if EOF is reached or an error occurs, break the loop
 			break;
 
 		// Tokenize input line into arguments, detect '&'

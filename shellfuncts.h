@@ -14,5 +14,5 @@ int parse_line(char *line, char **args, bool *background); // Function to parse 
 
 void execute_command(int argc, char **args, bool background); // Function to execute a command
 
-#endif // SHELLFUNCTS_H
+#endif // End guard
 
